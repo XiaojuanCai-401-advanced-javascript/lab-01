@@ -1,0 +1,28 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "a command line application which will allow the user to specify a note (words) to be added to a database.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaojuanCai-401-advanced-javascript/lab-01.git"
+  },
+  "author": "Xiaojuan Cai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XiaojuanCai-401-advanced-javascript/lab-01/issues"
+  },
+  "homepage": "https://github.com/XiaojuanCai-401-advanced-javascript/lab-01#readme",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
