@@ -1,12 +1,20 @@
 #!/usr/bin/env node
 'use strict';
 
+const Validator = require('./lib/validator.js');
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
 
-const options = new Input();
+
+const rules = {
+  action: {required: true},
+  payload: {required: true}
+};
+
+const validator = new Validator(rules);
+const input = new Input();
 const notes = new Notes();
-options.valid() ? notes.execute(options) : help();
+validator.valid(input) ? notes.execute(input) : help();
 
 function help() {
   console.log(`
